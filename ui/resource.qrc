@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="icon">
+    <file alias="logo">res/icon.png</file>
+  </qresource>
+  <qresource prefix="button">
+    <file alias="connect">res/connected.png</file>
+    <file alias="disconnect">res/disconnect.png</file>
+  </qresource>
+</RCC>
