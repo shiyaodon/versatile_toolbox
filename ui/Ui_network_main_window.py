@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_mainWindow(object):
     def setupUi(self, mainWindow):
         mainWindow.setObjectName("mainWindow")
-        mainWindow.resize(733, 675)
+        mainWindow.resize(798, 675)
         mainWindow.setMinimumSize(QtCore.QSize(600, 400))
         mainWindow.setMaximumSize(QtCore.QSize(1366, 768))
         icon = QtGui.QIcon()
@@ -38,6 +38,9 @@ class Ui_mainWindow(object):
         self.gridLayout = QtWidgets.QGridLayout()
         self.gridLayout.setObjectName("gridLayout")
         self.btn_connect = QtWidgets.QPushButton(self.groupBox)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.btn_connect.setFont(font)
         icon1 = QtGui.QIcon()
         icon1.addPixmap(QtGui.QPixmap(":/button/disconnect"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btn_connect.setIcon(icon1)
@@ -115,7 +118,7 @@ class Ui_mainWindow(object):
         self.horizontalLayout_4.setStretch(1, 1)
         mainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(mainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 733, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 798, 26))
         self.menubar.setObjectName("menubar")
         self.menuFile = QtWidgets.QMenu(self.menubar)
         self.menuFile.setObjectName("menuFile")
@@ -133,7 +136,7 @@ class Ui_mainWindow(object):
 
     def retranslateUi(self, mainWindow):
         _translate = QtCore.QCoreApplication.translate
-        mainWindow.setWindowTitle(_translate("mainWindow", "工具箱"))
+        mainWindow.setWindowTitle(_translate("mainWindow", "网络调试助手"))
         self.groupBox.setTitle(_translate("mainWindow", "网络设置"))
         self.btn_connect.setText(_translate("mainWindow", "进行连接"))
         self.edit_target_ip.setInputMask(_translate("mainWindow", "000.000.000.000;_"))
@@ -149,4 +152,6 @@ class Ui_mainWindow(object):
         self.btn_send.setText(_translate("mainWindow", "发送"))
         self.menuFile.setTitle(_translate("mainWindow", "File"))
         self.menuAbout.setTitle(_translate("mainWindow", "About"))
+
+
 from ui import resource_rc

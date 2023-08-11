@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>733</width>
+    <width>798</width>
     <height>675</height>
    </rect>
   </property>
@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>工具箱</string>
+   <string>网络调试助手</string>
   </property>
   <property name="windowIcon">
    <iconset resource="resource.qrc">
@@ -49,6 +49,11 @@
           <layout class="QGridLayout" name="gridLayout">
            <item row="3" column="0" colspan="2">
             <widget class="QPushButton" name="btn_connect">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
              <property name="text">
               <string>进行连接</string>
              </property>
@@ -229,7 +234,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>733</width>
+     <width>798</width>
      <height>26</height>
     </rect>
    </property>
