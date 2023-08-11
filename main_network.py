@@ -144,12 +144,8 @@ class NetWorkMainWindow(QMainWindow):
         self.ui.btn_send.clicked.connect(self.btn_send_clicked)
 
 
-def main():
+if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = NetWorkMainWindow()
     window.show()
     sys.exit(app.exec_())
-
-
-if __name__ == '__main__':
-    main()
